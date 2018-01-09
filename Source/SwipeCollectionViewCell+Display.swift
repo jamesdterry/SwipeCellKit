@@ -84,7 +84,7 @@ extension SwipeCollectionViewCell {
       state = targetState
     }
     
-    let maxOffset = min(bounds.width, abs(offset)) * -	orientation.scale
+    let maxOffset = min(bounds.width, abs(offset)) * -orientation.scale
     let targetCenter = abs(offset) == CGFloat.greatestFiniteMagnitude ? self.targetCenter(active: true) : bounds.midX + maxOffset
     
     if animated {
