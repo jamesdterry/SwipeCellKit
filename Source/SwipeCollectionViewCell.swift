@@ -115,7 +115,7 @@ open class SwipeCollectionViewCell: UICollectionViewCell, UIGestureRecognizerDel
     }
   }
   
-  func handlePan(gesture: UIPanGestureRecognizer) {
+    @objc func handlePan(gesture: UIPanGestureRecognizer) {
     guard let target = gesture.view else { return }
     
     switch gesture.state {
@@ -319,11 +319,11 @@ open class SwipeCollectionViewCell: UICollectionViewCell, UIGestureRecognizerDel
     }
   }
   
-  func handleTap(gesture: UITapGestureRecognizer) {
+    @objc func handleTap(gesture: UITapGestureRecognizer) {
     hideSwipe(animated: true)
   }
   
-  func handleCollectionPan(gesture: UIPanGestureRecognizer) {
+    @objc func handleCollectionPan(gesture: UIPanGestureRecognizer) {
     if gesture.state == .began {
       hideSwipe(animated: true)
     }

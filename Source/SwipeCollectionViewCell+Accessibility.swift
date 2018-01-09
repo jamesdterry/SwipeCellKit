@@ -64,7 +64,7 @@ extension SwipeCollectionViewCell {
     }
   }
   
-  func performAccessibilityCustomAction(accessibilityCustomAction: SwipeAccessibilityCustomAction) -> Bool {
+    @objc func performAccessibilityCustomAction(accessibilityCustomAction: SwipeAccessibilityCustomAction) -> Bool {
     guard let collectionView = collectionView else { return false }
     
     let swipeAction = accessibilityCustomAction.action
